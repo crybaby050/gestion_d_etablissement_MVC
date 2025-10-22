@@ -1,0 +1,90 @@
+{
+    "filiere": {
+        "0": {
+            "id": 1,
+            "libelle": "Informatique"
+        },
+        "1": {
+            "id": 3,
+            "libelle": "R\u00e9seaux"
+        },
+        "2": {
+            "id": 4,
+            "libelle": "informatique"
+        },
+        "3": {
+            "id": 5,
+            "libelle": "mathemathique"
+        },
+        "5": {
+            "id": 7,
+            "libelle": "Architechture des r\u00e9seaux"
+        }
+    },
+    "niveau": [
+        {
+            "id": 2,
+            "libelle": "Licence 2"
+        },
+        {
+            "id": 3,
+            "libelle": "Licence 3"
+        },
+        {
+            "id": 4,
+            "libelle": "Licence 4"
+        },
+        {
+            "id": 5,
+            "libelle": "Licence 1"
+        }
+    ],
+    "classe": {
+        "3": {
+            "id": 6,
+            "libelle": "l1 design",
+            "code": "RES-L3",
+            "idFiliere": "7",
+            "idNiveau": "4"
+        },
+        "4": {
+            "id": 7,
+            "libelle": "L2 Developpement",
+            "code": "DEV-L2",
+            "idFiliere": "3",
+            "idNiveau": "3"
+        }
+    },
+    "etudiant": {
+        "3": {
+            "id": "4",
+            "matricule": "ETU004",
+            "nom": "Diop",
+            "prenom": "fallou",
+            "idClasse": 6,
+            "email": "abdou@gmail.com",
+            "telephone": "756653264",
+            "adresse": "dakar"
+        }
+    },
+    "users": [
+        {
+            "id": 1,
+            "nom": "BEN THIAM",
+            "mail": "benthiam@gmail.com",
+            "mdp": "123456"
+        },
+        {
+            "id": 2,
+            "nom": "modou fall",
+            "mail": "modoufall@gmail.com",
+            "mdp": "abcd"
+        },
+        {
+            "id": 3,
+            "nom": "fallou diop",
+            "mail": "falloudiop@gmail.com",
+            "mdp": "0000"
+        }
+    ]
+}

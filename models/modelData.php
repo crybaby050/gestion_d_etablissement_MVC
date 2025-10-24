@@ -1,7 +1,7 @@
 <?php
 //Créer dans le but de pouvoir reutiliser certaine fonction quand on le souhaite
 function jsonToArray():array{
-    $json = file_get_contents('data.json');
+    $json = file_get_contents('data/data.json');
     $datas = json_decode($json,true);
     if(empty($datas)){
         return [];
@@ -10,6 +10,6 @@ function jsonToArray():array{
     }
 }
 function arrayToJson($data):void{
-    $json = json_encode($data);
-    file_put_contents('data.json',$json);
+    $json = json_encode($data,JSON_PRETTY_PRINT);
+    file_put_contents('data/data.json',$json);
 }

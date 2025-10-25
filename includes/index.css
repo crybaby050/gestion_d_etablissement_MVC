@@ -33,7 +33,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url(image/im1.jpg);
+    background-image: url(../image/im1.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50px;

@@ -9,6 +9,27 @@ function findAllClasse():array{
     $datas=jsonToArray();
     return $datas['classe'];
 }
+function getClasseByLibelle($classes,$libelle){
+    foreach ($classes as $c) {
+        if($c["libelle"] == $libelle){
+            return $c;
+        }
+    }
+}
+function getEtudiantByClasse($etudiants, $classe){
+    $etus = [];
+    foreach ($etudiants as $e) {
+        if($e["idClasse"] == $classe["id"]){
+            $etus[] = $e;
+        }
+    }
+    return $etus;
+}
+function filteredByClasse($libelle, $etudiants,$classes){
+    $classe = getClasseByLibelle($classes,$libelle);
+    $etus = getEtudiantByClasse($etudiants,$classe);
+    return $etus;
+}
 function detailById($id): array {
     $tab = findAllEtudiant();
     foreach ($tab as $v) {

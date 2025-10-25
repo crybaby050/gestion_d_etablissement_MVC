@@ -16,5 +16,5 @@ function listeEtudiant(){
         $etude = filteredByClasse($val, $etude, $classe);
         // require_once('liste.php');
     }
-    require_once 'view/etudiant/liste.php';
+require_once __DIR__ . '/../views/etudiant/liste.php';
 }

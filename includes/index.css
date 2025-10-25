@@ -1,0 +1,998 @@
+/*Partie connnection*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+    .divp{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right,rgb(42, 98, 255) ,rgb(42, 98, 255),rgb(139,205,221),rgb(139,205,221));
+}
+.con{
+    height: 85%;
+    width: 65%;
+    display: flex;
+    border-radius: 50px;
+    background-color: white;
+}
+.image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vis{
+    height: 98%;
+    width: 98%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(image/im1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+.vis span{
+    font-weight: bolder;
+    height: 8%;
+    width: 95%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    background-color: white;
+}
+.txt{  
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    height: 10%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+.logo p{
+    margin-left: 2%;
+}
+.co{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: -10%;
+}
+.co h1{
+    height: 40%;
+    width: 100%;
+    margin : 0;
+    color: rgb(50, 139, 213);
+    font-size: 250%;
+}
+.co p{
+    width: 100%;
+    height: 40%;
+    font-size: 90%;
+}
+.txt form{
+    height: 50%;
+    width: 100%;
+}
+.inscrire{
+    height: 5%;
+    width: 100%;
+}
+.circle{
+    height: 100%;
+    width: 14%;
+    border-radius: 50%;
+    background-color: rgb(50, 139, 213);
+}
+.con form{    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(50, 139, 213);
+    margin-top: -20%;
+}
+.mail{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mail p{
+    color: red;
+    width: 90%;
+}
+.prenom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prenom i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.nom i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.mail i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.prenom input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.nom input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.mail input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.mail input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.pass{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pass p{
+    color: red;
+    width: 90%;
+}
+.pass i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.pass input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.pass input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.prenom input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.nom input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.bout{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+.bout p{
+    color: red;
+    width: 90%;
+}
+.bout button{
+    border: none;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(50, 139, 213);
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+}
+.bout a{
+    text-decoration: none;
+    color: white;
+}
+form span{
+    width: 90%;
+    height: 10%;
+    margin-top: -10%;
+    margin-left: 4%;
+    color: black;
+    font-size: 70%;
+}
+form span a{
+    color: rgb(50, 139, 213);
+    font-weight: bolder;
+    font-size: 120%;
+}
+/*Responsive tablette*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .con{
+        width: 80%;
+        height: 80%;
+        border-radius: 30px;
+    }
+    .image{
+        width: 50%;
+        height: 100%;
+    }
+    .vis{
+        width: 97%;
+        height: 98%;
+        border-radius: 30px;
+    }
+    .vis span{
+        width: 90%;
+        height: 9%;
+        margin-bottom: 6%;
+    }
+    .logo{
+        height: 8%;
+    }
+    .circle{
+        width: 15%;
+    }
+    .logo p{
+        font-size: 100%;
+    }
+    .co{
+        height: 14%;
+    }
+    .co h1{
+        font-size: 200%;
+    }
+    .co p{
+        font-size: 80%;
+    }
+    .mail input::placeholder{
+        font-size: 100%;
+    }
+    .pass input::placeholder{
+        font-size: 100%;
+    }
+    .mail i{
+        font-size: 80%;
+    }
+    .pass i{
+        font-size: 80%;
+    }
+    .bout button{
+        font-size: 80%;
+    }
+    form span{
+        font-size: 65%;
+        margin-left: 5%;
+    }
+}
+@media (min-width:1025px) and (max-width: 1440px) {
+    .con{
+        width: 80%;
+        height: 75%;
+    }
+    .circle{
+        width: 16%;
+    }
+    .mail input::placeholder{
+        font-size: 110%;
+    }
+    .pass input::placeholder{
+        font-size: 110%;
+    }
+}
+/*Responsive mobile*/
+@media(max-width: 767px){
+    .con{
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 20px;
+    }
+    .logo{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .txt{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .image{
+        width: 100%;
+        height: 30%;
+    }
+    .vis{
+        border-radius: 20px;
+    }
+    .vis span{
+        width: 90%;
+        height: 20%;
+    }
+    .vis span h3{
+        font-size: 90%;
+    }
+    .co{
+        height: 15%;
+        display: flex;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .co h1{
+        font-size: 150%;
+    }
+    .co p{
+        font-size: 60%;
+    }
+    .mail{
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .pass{
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .mail input::placeholder{
+        font-size: 70%;
+    }
+    .pass input::placeholder{
+        font-size: 70%;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+    }
+    .bout button{
+        width: 85%;
+        height: 100%;
+        font-size: 70%;
+    }
+    form span{
+        font-size: 60%;
+    }
+    .mail i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .pass i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .bout{
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+}
+/*Partie inscription*/
+    .divpe{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right,rgb(42, 98, 255) ,rgb(76, 124, 255),rgb(139,205,221),rgb(139,205,221));
+}
+.cone{
+    height: 90%;
+    width: 65%;
+    display: flex;
+    border-radius: 50px;
+    background-color: white;
+}
+.imagee{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vise{
+    height: 98%;
+    width: 98%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(image/im1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+.vise span{
+    font-weight: bolder;
+    height: 8%;
+    width: 95%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    background-color: white;
+}
+.txte{  
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logoe{
+    height: 7%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.logoe p{
+    margin-left: 2%;
+}
+.coe{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.coe h1{
+    height: 40%;
+    width: 100%;
+    margin : 0;
+    color: rgb(50, 139, 213);
+    font-size: 220%;
+}
+.coe p{
+    width: 100%;
+    height: 40%;
+    font-size: 90%;
+}
+.inscriree{
+    height: 5%;
+    width: 100%;
+}
+.circlee{
+    height: 100%;
+    width: 14%;
+    border-radius: 50%;
+    background-color: rgb(50, 139, 213);
+}
+form{    
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(50, 139, 213);
+    height: 70%;
+    width: 100%;
+    margin-bottom: 8%;
+}
+.maile{
+    margin: 0;
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prenome{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.nome{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.prenome i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.nome i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.maile i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.prenome input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.nome input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.maile input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.maile input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.passe{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.confirme{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tel{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adresse{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adresse i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.tel i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.confirme i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.passe i{
+    margin-left: -5%;
+    color: rgb(50, 139, 213);
+}
+.passe input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.passe input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.prenome input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.nome input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.confirme input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.confirme input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.tel input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.tel input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.adresse input{
+    border: none;
+    border-bottom: 2px solid rgb(50, 139, 213);
+    width: 90%;
+    height: 80%;
+    color: rgb(50, 139, 213);
+}
+.adresse input::placeholder{
+    color: rgb(50, 139, 213);
+}
+.boute{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.boute button{
+    border: none;
+    width: 90%;
+    height: 45%;
+    background-color: rgb(50, 139, 213);
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+}
+.boute a{
+    text-decoration: none;
+    color: white;
+}
+form span{
+    width: 90%;
+    height: 10%;
+    margin-left: 6%;
+    color: black;
+    font-size: 70%;
+    margin-top: 2%;
+}
+form span a{
+    color: rgb(50, 139, 213);
+    font-weight: bolder;
+    font-size: 120%;
+}
+/*Responsive tablette*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .divpe{
+        height: 130vh;
+    }
+    .cone{
+        width: 90%;
+        height: 80%;
+        border-radius: 30px;
+    }
+    form{
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagee{
+        width: 50%;
+        height: 100%;
+    }
+    .vise{
+        width: 97%;
+        height: 98%;
+        border-radius: 30px;
+    }
+    .vise span{
+        width: 90%;
+        height: 9%;
+        margin-bottom: 6%;
+    }
+    .prenome{
+        margin: 0;
+        height: 11%;
+    }
+    .nome{
+        margin: 0;
+        height: 11%;
+    }
+    .maile{
+        margin: 0;
+        height: 11%;
+    }
+    .passe{
+        margin: 0;
+        height: 11%;
+    }
+    .confirme{
+        margin: 0;
+        height: 11%;
+    }
+    .tel{
+        margin: 0;
+        height: 11%;
+    }
+    .adresse{
+        margin: 0;
+        height: 11%;
+    }
+    .logoe{
+        height: 6%;
+    }
+    .circlee{
+        width: 13%;
+    }
+    .logoe p{
+        font-size: 100%;
+    }
+    .coe{
+        height: 10%;
+    }
+    .txte{
+        padding: 0;
+        margin: 0;
+    }
+    .coe h1{
+        font-size: 170%;
+    }
+    .coe p{
+        font-size: 70%;
+    }
+    .maile input::placeholder{
+        font-size: 100%;
+    }
+    .prenome input::placeholder{
+        font-size: 100%;
+    }
+    .nome input::placeholder{
+        font-size: 100%;
+    }
+    .passe input::placeholder{
+        font-size: 100%;
+    }
+    .confirme input::placeholder{
+        font-size: 100%;
+    }
+    .tel input::placeholder{
+        font-size: 100%;
+    }
+    .adresse input::placeholder{
+        font-size: 100%;
+    }
+    .maile i{
+        font-size: 80%;
+    }
+    .prenome i{
+        font-size: 80%;
+    }
+    .nome i{
+        font-size: 80%;
+    }
+    .passe i{
+        font-size: 80%;
+    }
+    .confirme i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .tel i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .adresse i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .boute button{
+        font-size: 80%;
+        height: 35%;
+        width: 95%;
+    }
+    form span{
+        font-size: 65%;
+        margin-left: 5%;
+        margin-top: -5%;
+    }
+}
+@media (min-width:1025px) and (max-width: 1440px) {
+    .cone{
+        width: 80%;
+        height: 75%;
+    }
+    .circlee{
+        width: 16%;
+    }
+    .maile input::placeholder{
+        font-size: 110%;
+    }
+    .passe input::placeholder{
+        font-size: 110%;
+    }
+}
+/*Responsive mobile*/
+@media(max-width: 767px){
+    .divpe{
+        height: 160vh;
+    }
+    .cone{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 20px;
+    }
+    .logoe{
+        height: 6%;
+    }
+    .logoe p{
+        font-size: 70%;
+    }
+    .txte{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .imagee{
+        width: 100%;
+        height: 25%;
+    }
+    .vise{
+        border-radius: 20px;
+        height: 95%;
+    }
+    .vise span{
+        width: 90%;
+        height: 20%;
+    }
+    .vise span h3{
+        font-size: 90%;
+    }
+    .coe{
+        height: 10%;
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .coe h1{
+        font-size: 150%;
+    }
+    .coe p{
+        font-size: 60%;
+    }
+    .maile{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .prenome{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .nome{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .passe{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .confirme{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .tel{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .adresse{
+        width: 90%;
+        height: 10%;
+        margin-right: 5%;
+    }
+    .maile input::placeholder{
+        font-size: 70%;
+    }
+    .prenome input::placeholder{
+        font-size: 70%;
+    }
+    .nome input::placeholder{
+        font-size: 70%;
+    }
+    .passe input::placeholder{
+        font-size: 70%;
+    }
+    .confirme input::placeholder{
+        font-size: 70%;
+    }
+    .tel input::placeholder{
+        font-size: 70%;
+    }
+    .adresse input::placeholder{
+        font-size: 70%;
+    }
+    form{
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    .boute button{
+        width: 85%;
+        height: 100%;
+        font-size: 70%;
+    }
+    form span{
+        font-size: 60%;
+        border: none;
+    }
+    .maile i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .prenome i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .passe i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .nome i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .confirme i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .tel i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .adresse i{
+        font-size: 80%;
+        margin-left: -6%;
+    }
+    .boute{
+        height: 7%;
+        margin-top: 4%;
+    }
+    form span{
+        height: 5%;
+    }
+}

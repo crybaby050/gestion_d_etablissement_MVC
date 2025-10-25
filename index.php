@@ -1,4 +1,6 @@
 <?php
+session_start();
+// session_unset();
 ob_start();
 require_once 'controllers/controllerUser.php';
 require_once 'controllers/controllerEtudiant.php';

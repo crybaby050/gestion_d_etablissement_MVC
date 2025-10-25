@@ -52,3 +52,14 @@ function modifierById($modif): void {
         }
     }
 }
+//fonction pour la suppression des etudiants
+function delEtudiantById($id){
+    $datas = jsonToArray();
+    foreach($datas['etudiant'] as $data => $k){
+        if($k['id'] == $id){
+            unset($datas['etudiant'][$data]);
+            arrayToJson($datas);
+            return;
+        }
+    }
+}

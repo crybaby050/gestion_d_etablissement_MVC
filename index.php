@@ -14,6 +14,8 @@ switch ($page) {
     case 'login':
         loginPage();
         break;
+        // require_once 'partials/tete.php';
+        // require_once 'partials/sidebar.php';
     case 'liste_etudiant':
         listeEtudiant();
         break;

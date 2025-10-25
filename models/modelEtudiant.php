@@ -9,6 +9,7 @@ function findAllClasse():array{
     $datas=jsonToArray();
     return $datas['classe'];
 }
+//debut recuperation des données pour filtrer les etudiants par classe
 function getClasseByLibelle($classes,$libelle){
     foreach ($classes as $c) {
         if($c["libelle"] == $libelle){
@@ -30,6 +31,7 @@ function filteredByClasse($libelle, $etudiants,$classes){
     $etus = getEtudiantByClasse($etudiants,$classe);
     return $etus;
 }
+//fonction pour chercher les details des etudiants
 function detailById($id): array {
     $tab = findAllEtudiant();
     foreach ($tab as $v) {
@@ -39,6 +41,7 @@ function detailById($id): array {
     }
     return [];
 }
+//fonction pour modifier les données des etudiants
 function modifierById($modif): void {
     $datas = jsonToArray();
     foreach ($datas['etudiant'] as $index => $mod) {

@@ -5,6 +5,10 @@ function findAllEtudiant():array{
     $datas=jsonToArray();
     return $datas['etudiant'];
 }
+function findAllClasse():array{
+    $datas=jsonToArray();
+    return $datas['classe'];
+}
 function detailById($id): array {
     $tab = findAllEtudiant();
     foreach ($tab as $v) {

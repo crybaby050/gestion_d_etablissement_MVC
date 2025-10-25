@@ -1,5 +1,5 @@
 <?php
-require_once 'models/modelEtudiant.php';
+require_once '../models/modelEtudiant.php';
 function liste_etudiant(){
     $error = '';
     //partie supression de l'etudiant a partir de l'id recuperer

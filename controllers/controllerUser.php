@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/modelData.php';
+require_once __DIR__ . '../models/modelUser.php';
 function getUser(){
     if (isset($_SESSION["userConnect"])) {
         header("location:" . WEBROOT . "?page=dashboard");

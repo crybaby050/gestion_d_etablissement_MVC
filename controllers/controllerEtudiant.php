@@ -1,6 +1,6 @@
 <?php
-require_once '../models/modelEtudiant.php';
-function liste_etudiant(){
+require_once __DIR__ . '/../models/modelEtudiant.php';
+function listeEtudiant(){
     $error = '';
     //partie supression de l'etudiant a partir de l'id recuperer
     $classe = findAllClasse();

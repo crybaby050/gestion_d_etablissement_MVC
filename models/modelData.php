@@ -1,7 +1,7 @@
 <?php
 //Créer dans le but de pouvoir reutiliser certaine fonction quand on le souhaite
 function jsonToArray():array{
-    $json = file_get_contents(__DIR__ . '/../data/data.json');
+    $json = file_get_contents(__DIR__ . '../data/data.json');
     $datas = json_decode($json,true);
     if(empty($datas)){
         return [];

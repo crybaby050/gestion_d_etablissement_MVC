@@ -1,16 +1,16 @@
 <?php
-require_once __DIR__ . '../models/modelUser.php';
-function getUser(){
+require_once __DIR__ . '/../models/modelUser.php';
+function loginPage(){
     if (isset($_SESSION["userConnect"])) {
-        header("location:" . WEBROOT . "?page=dashboard");
+        header("Location: index.php?page=liste_etudiant");
         exit;
     }
     $errorLogin = "";
     $errorPwd = "";
     $errorConnect = "";
     if (isset($_POST["connect"])) {
-        $login = trim($_REQUEST["mail"]);
-        $pwd = trim($_REQUEST["mdp"]);
+        $login = trim($_POST["mail"]);
+        $pwd = trim($_POST["mdp"]);
         $verification = true;
         if (empty($login)) {
             $errorLogin = "Login obligatoire";
@@ -22,13 +22,14 @@ function getUser(){
         }
         if ($verification) {
             $user = findUserConnect($login, $pwd);
-            if (!empty($user)) {
+            if ($user) {
                 $_SESSION["userConnect"] = $user;
-                header('location:' . WEBROOT . '?page=dashboard');
+                header("Location: index.php?page=liste_etudiant");
+                exit;
             } else {
                 $errorConnect = "Login ou mot de passe incorrect";
             }
         }
     }
-    require_once("login.php");
+require_once __DIR__ . '/../views/user/login.php';
 }

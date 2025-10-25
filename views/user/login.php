@@ -24,7 +24,7 @@
                     <h1>CONNEXION</h1>
                     <p>Entrez vos identifiants pour vous connecter</p>
                 </div>
-                <form action="" method="post">
+                <form action="index.php?page=login" method="post">
                     <div class="mail">
                         <input type="text" placeholder="Adress mail"  name="mail"><i class="fa-solid fa-envelope"></i>
                         <p><?= $errorLogin ?></p>

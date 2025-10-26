@@ -5,6 +5,7 @@ function findAllEtudiant():array{
     $datas=jsonToArray();
     return $datas['etudiant'];
 }
+//recuperation des données des classes pour le filtrage
 function findAllClasse():array{
     $datas=jsonToArray();
     return $datas['classe'];
@@ -42,16 +43,16 @@ function detailById($id): array {
     return [];
 }
 //fonction pour modifier les données des etudiants
-function modifierById($modif): void {
-    $datas = jsonToArray();
-    foreach ($datas['etudiant'] as $index => $mod) {
-        if ((int)$mod['id'] === (int)$modif['id']) {
-            $datas['etudiant'][$index] = $modif;
-            arrayToJson($datas);
-            return; // sortie dès que modif faite
-        }
-    }
-}
+// function modifierById($modif): void {
+//     $datas = jsonToArray();
+//     foreach ($datas['etudiant'] as $index => $mod) {
+//         if ((int)$mod['id'] === (int)$modif['id']) {
+//             $datas['etudiant'][$index] = $modif;
+//             arrayToJson($datas);
+//             return; // sortie dès que modif faite
+//         }
+//     }
+// }
 //fonction pour la suppression des etudiants
 function delEtudiantById($id){
     $datas = jsonToArray();

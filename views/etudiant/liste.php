@@ -1,7 +1,7 @@
 <?php
-require_once 'partials/tete.php';
-$nameUser = $_SESSION['userConnect'];
-require_once 'partials/sidebar.php';
+// require_once 'partials/tete.php';
+// $nameUser = $_SESSION['userConnect'];
+// require_once 'partials/sidebar.php';
 ?>
         <div class="elema">
             <div class="titrea">

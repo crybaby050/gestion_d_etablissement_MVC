@@ -10,12 +10,15 @@ if (!isset($_SESSION["userConnect"]) && $page !== 'login') {
     header("Location: " . WEBROOT);
     exit;
 }
+if ($page !== 'login') {
+    require_once __DIR__ . '/partials/tete.php';
+    $nameUser = $_SESSION['userConnect'];
+    require_once __DIR__ . '/partials/sidebar.php';
+}
 switch ($page) {
     case 'login':
         loginPage();
         break;
-        // require_once 'partials/tete.php';
-        // require_once 'partials/sidebar.php';
     case 'liste_etudiant':
         listeEtudiant();
         break;

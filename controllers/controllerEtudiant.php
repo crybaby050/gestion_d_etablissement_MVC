@@ -149,3 +149,13 @@ function modifEtudiant()
     }
     require_once __DIR__ . '/../views/etudiant/modife.php';
 }
+function detailEtudiant()
+{
+    $classe = findAllClasse();
+    $detail = [];
+    if (isset($_REQUEST['id'])) {
+        $id = intval($_REQUEST['id']);
+        $detail = detailById($id);
+    }
+    require_once __DIR__ . '/../views/etudiant/detail.php';
+}

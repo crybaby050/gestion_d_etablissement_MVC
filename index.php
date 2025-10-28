@@ -32,6 +32,9 @@ switch ($page) {
     case 'modif_etudiant':
         modifEtudiant();
     break;
+    case 'detail_etudiant':
+        detailEtudiant();
+    break;
     case 'liste_classe':
         listeClasse();
     break;

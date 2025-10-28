@@ -62,7 +62,7 @@
                                 <?php $id = $k['id']?>
                                 <td class="confclasse">
                                     <a href="<?=WEBROOT?>?page=modif_etudiant&id=<?=$id?>"><i class="fa-solid fa-pencil"></i></a>
-                                    <a href="<?=WEBROOT?>?page=detail&id=<?=$id?>"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="<?=WEBROOT?>?page=detail_etudiant&id=<?=$id?>"><i class="fa-solid fa-eye"></i></a>
                                     <a href="<?=WEBROOT?>?page=liste_etudiant&id=<?=$id?>" onclick="return confirm('Voulez-vous vraiment supprimer cet étudiant ?')">
                                         <i class="fa-solid fa-trash"></i>
                                     </a>

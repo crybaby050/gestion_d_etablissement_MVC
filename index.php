@@ -29,6 +29,9 @@ switch ($page) {
     case 'ajout_etudiant':
         ajoutEtudiant();
     break;
+    case 'modif_etudiant':
+        modifEtudiant();
+    break;
     case 'liste_classe':
         listeClasse();
     break;

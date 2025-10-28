@@ -49,12 +49,7 @@ function delEtudiantById($id){
         }
     }
 }
-//verification de si le tableau est vide
-// function presence($tab):void{
-//     if(count($tab)==0){
-//         echo "<h3> Auncun element enregistrer</h3>";
-//     }
-// }
+
 //fonction pour trouver la classe a partir de l'idClasse present dans l'etudiant
 function getLibelleByIdElement($classe,$id){
     foreach ($classe as $c) {

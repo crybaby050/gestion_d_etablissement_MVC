@@ -4,6 +4,7 @@ session_start();
 ob_start();
 require_once 'controllers/controllerUser.php';
 require_once 'controllers/controllerEtudiant.php';
+require_once 'controllers/controllerClasse.php';
 define("WEBROOT", "http://localhost:8000/");
 $page = $_REQUEST['page'] ?? 'login';
 if (!isset($_SESSION["userConnect"]) && $page !== 'login') {

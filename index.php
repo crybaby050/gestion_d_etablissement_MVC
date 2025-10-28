@@ -2,6 +2,7 @@
 session_start();
 // session_unset();
 ob_start();
+require_once 'models/modelReutilisable.php';
 require_once 'controllers/controllerUser.php';
 require_once 'controllers/controllerEtudiant.php';
 require_once 'controllers/controllerClasse.php';

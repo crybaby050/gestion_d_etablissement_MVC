@@ -46,13 +46,6 @@
             "code": "RES-L3",
             "idFiliere": "7",
             "idNiveau": "4"
-        },
-        "4": {
-            "id": 7,
-            "libelle": "L2 Developpement",
-            "code": "DEV-L2",
-            "idFiliere": "3",
-            "idNiveau": "3"
         }
     },
     "etudiant": {

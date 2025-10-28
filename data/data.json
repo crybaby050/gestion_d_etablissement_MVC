@@ -60,6 +60,16 @@
             "email": "benthiam@gmail.com",
             "telephone": "768324376",
             "adresse": "pikine"
+        },
+        "5": {
+            "id": 6,
+            "matricule": "ETU006",
+            "nom": "gueye",
+            "prenom": "modou",
+            "idClasse": 6,
+            "email": "modou@gmail.com",
+            "telephone": "771234567",
+            "adresse": "guediaway"
         }
     },
     "users": [

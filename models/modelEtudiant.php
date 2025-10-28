@@ -52,3 +52,13 @@ function getLibelleByIdElement($classe,$id){
         }
     }
 }
+//fonction qui verifie l'unicité d'un element
+function verificationUnicite(mixed $data,string $a):bool{
+    $etudes=findAllEtudiant();
+    foreach($etudes as $etude){
+        if($etude[$a]==$data){
+            return false;
+        }
+    }
+    return true;
+}

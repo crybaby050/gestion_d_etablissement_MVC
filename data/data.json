@@ -50,6 +50,16 @@
             "email": "abdou@gmail.com",
             "telephone": "756653264",
             "adresse": "dakar"
+        },
+        "4": {
+            "id": 5,
+            "matricule": "ETU005",
+            "nom": "Thiam",
+            "prenom": "abdou",
+            "idClasse": 6,
+            "email": "benthiam@gmail.com",
+            "telephone": "9797979797",
+            "adresse": "pikine"
         }
     },
     "users": [

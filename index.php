@@ -27,6 +27,9 @@ switch ($page) {
     case 'liste_classe':
         listeClasse();
     break;
+    case 'liste_filiere':
+        listeFiliere();
+    break;
     case 'logout':
         session_destroy();
         header("Location: " . WEBROOT);

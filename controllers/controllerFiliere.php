@@ -1,5 +1,5 @@
 <?php
-require_once '\..\models\modelFiliere.php';
+require_once __DIR__ . '/../models/modelFiliere.php';
 function listeFiliere(){
     $errors = [];
     $verif = true;

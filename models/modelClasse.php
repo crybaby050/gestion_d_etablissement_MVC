@@ -5,14 +5,14 @@
 //     return $datas['classe'];
 // }
 //recuperation des données de niveau et de filiere pour le filtrages des classes
-function findAllFilliere():array{
-    $datas=jsonToArray();
-    return $datas['filiere'];
-}
-function findAllNiveau():array{
-    $datas=jsonToArray();
-    return $datas['niveau'];
-}
+// function findAllFilliere():array{
+//     $datas=jsonToArray();
+//     return $datas['filiere'];
+// }
+// function findAllNiveau():array{
+//     $datas=jsonToArray();
+//     return $datas['niveau'];
+// }
 
 //fonction pour les details des classes
 function detailClasseById($id): array {

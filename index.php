@@ -6,6 +6,7 @@ require_once 'models/modelReutilisable.php';
 require_once 'controllers/controllerUser.php';
 require_once 'controllers/controllerEtudiant.php';
 require_once 'controllers/controllerClasse.php';
+require_once 'controllers/controllerFiliere.php';
 define("WEBROOT", "http://localhost:8000/");
 $page = $_REQUEST['page'] ?? 'login';
 if (!isset($_SESSION["userConnect"]) && $page !== 'login') {

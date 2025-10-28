@@ -10,10 +10,10 @@
                 <li><i class="fas fa-home"></i><a href="?page=dashboard">ACCUEIL</a></li>
                 <!-- Étudiants -->
                 <li><i class="fa-solid fa-user-group"></i><a href="?page=liste_etudiant">ÉTUDIANTS</a></li>
-                <li><strong>+</strong><i class="fa-solid fa-user-group"></i><a href="?page=ajout_etudiant">AJOUT ÉTUDIANT</a></li>
+                <li><i class="fa-solid fa-user-group"></i><a href="?page=ajout_etudiant">AJOUT ÉTUDIANT</a></li>
                 <!-- Classes -->
                 <li><i class="fa-solid fas fa-school"></i><a href="?page=liste_classe">CLASSE</a></li>
-                <li><strong>+</strong><i class="fa-solid fas fa-school"></i><a href="?page=ajout_classe">AJOUT CLASSE</a></li>
+                <li><i class="fa-solid fas fa-school"></i><a href="?page=ajout_classe">AJOUT CLASSE</a></li>
                 <!-- Filière -->
                 <li><i class="fa-solid fas fa-book-open"></i><a href="?page=liste_filiere">FILIÈRE</a></li>
                 <!-- Niveaux -->

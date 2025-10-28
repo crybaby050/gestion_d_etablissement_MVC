@@ -18,10 +18,13 @@ if ($page !== 'login') {
 switch ($page) {
     case 'login':
         loginPage();
-        break;
+    break;
     case 'liste_etudiant':
         listeEtudiant();
-        break;
+    break;
+    case 'liste_classe':
+        listeClasse();
+    break;
     case 'logout':
         session_destroy();
         header("Location: " . WEBROOT);

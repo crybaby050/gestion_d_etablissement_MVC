@@ -62,3 +62,14 @@ function verificationUnicite(mixed $data,string $a):bool{
     }
     return true;
 }
+//fonction pour modifier un etudiant
+function modifierById($modif): void {
+    $datas = jsonToArray();
+    foreach ($datas['etudiant'] as $index => $mod) {
+        if ((int)$mod['id'] === (int)$modif['id']) {
+            $datas['etudiant'][$index] = $modif;
+            arrayToJson($datas);
+            return; // sortie dès que modif faite
+        }
+    }
+}

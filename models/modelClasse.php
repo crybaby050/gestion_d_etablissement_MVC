@@ -68,7 +68,7 @@ function getClasseByFiliere($classe,$filiere){
     }
     return $clas;
 }
-//filtrage
+//filtrage par filiere
 function filterByFiliere($filieres,$libelle,$classe){
     $filiere = getFiliereByLibelle($filieres,$libelle);
     $clas = getClasseByFiliere($classe,$filiere);
@@ -94,7 +94,7 @@ function getClasseByNiveau($classe,$niveau){
     }
     return $clas;
 }
-//filtrage
+//filtrage par niveau
 function filterByNiveau($niveau,$libelle,$classe){
     $niveau = getNiveauByLibelle($niveau,$libelle);
     $clas = getClasseByNiveau($classe,$niveau);

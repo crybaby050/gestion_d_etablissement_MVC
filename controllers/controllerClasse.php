@@ -8,7 +8,7 @@ function listeClasse()
     if (isset($_REQUEST['id'])) {
         $id = intval($_REQUEST['id']);
         delClasseWithEtudiant($id);
-        header("Location:".WEBROOT."index.php?page=liste_classe");
+        header("Location:" . WEBROOT . "index.php?page=liste_classe");
     }
     $classes = findAllClasse();
     if (isset($_REQUEST['fil'])) {
@@ -19,4 +19,41 @@ function listeClasse()
         $classes = filterByNiveau($niveau, $libe, $classes);
     }
     require_once __DIR__ . '/../views/classe/classe.php';
+}
+function ajoutClasse(){
+    $niveau = findAllNiveau();
+    $filiere = findAllFilliere();
+    $classe = findAllClasse();
+    $errors = [];
+    $verif = true;
+    $verifcode = true;
+    if (isset($_REQUEST['ajClasses'])) {
+        $lib = trim($_REQUEST['nom']);
+        $verif = verificationUniciteOnClasse($lib, 'libelle');
+        $code = trim($_REQUEST['cod']);
+        $verifcode = verificationUniciteOnClasse($code, 'code');
+        if (empty($lib)) {
+            $errors['nom'] = 'Champ obligatoire';
+        } elseif ($verif == false) {
+            $errors['nom'] = 'Cette classe existe déjà';
+        }
+        if (empty($code)) {
+            $errors['code'] = 'Champ obligatoire';
+        } elseif ($verifcode == false) {
+            $errors['code'] = 'Ce code existe déja';
+        }
+        if (empty($errors)) {
+            $newClasse = [
+                "id" => nouveauId($classe),
+                "libelle" => $lib,
+                "code" => $code,
+                "idFiliere" => $_REQUEST['fil'],
+                "idNiveau" => $_REQUEST['niv']
+            ];
+            ajouter($newClasse, 'classe');
+            header("location:" . WEBROOT . "?page=liste_classe");
+            exit;
+        }
+    }
+    require_once __DIR__ . '/../views/classe/ajout.php';
 }

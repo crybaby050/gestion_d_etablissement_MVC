@@ -38,6 +38,20 @@
             "code": "RES-L3",
             "idFiliere": "7",
             "idNiveau": "4"
+        },
+        "4": {
+            "id": 7,
+            "libelle": "design",
+            "code": "des-003",
+            "idFiliere": "5",
+            "idNiveau": "5"
+        },
+        "5": {
+            "id": 8,
+            "libelle": "marketing",
+            "code": "md-001",
+            "idFiliere": "1",
+            "idNiveau": "3"
         }
     },
     "etudiant": {

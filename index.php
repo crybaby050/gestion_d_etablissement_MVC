@@ -23,6 +23,7 @@ switch ($page) {
     case 'login':
         loginPage();
     break;
+    //partie sur les etudiants
     case 'liste_etudiant':
         listeEtudiant();
     break;
@@ -35,12 +36,21 @@ switch ($page) {
     case 'detail_etudiant':
         detailEtudiant();
     break;
+    //partie sur les classes
     case 'liste_classe':
         listeClasse();
     break;
+    case 'ajout_classe':
+        ajoutClasse();
+    break;
+    // case 'modif_classe':
+    //     modifeClasse();
+    // break;
+    //partie sur les filiere
     case 'liste_filiere':
         listeFiliere();
     break;
+    //partin sur les niveau
     case 'liste_niveau':
         listeNiveau();
     break;
@@ -48,9 +58,9 @@ switch ($page) {
         session_destroy();
         header("Location: " . WEBROOT);
         exit;
-        break;
+    break;
     default:
         echo "Page introuvable.";
-        break;
+    break;
 }
 ob_end_flush();

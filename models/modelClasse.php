@@ -1,19 +1,4 @@
 <?php
-//recuperation de donnée des classes
-// function findAllClasse():array{
-//     $datas=jsonToArray();
-//     return $datas['classe'];
-// }
-//recuperation des données de niveau et de filiere pour le filtrages des classes
-// function findAllFilliere():array{
-//     $datas=jsonToArray();
-//     return $datas['filiere'];
-// }
-// function findAllNiveau():array{
-//     $datas=jsonToArray();
-//     return $datas['niveau'];
-// }
-
 //fonction pour les details des classes
 function detailClasseById($id): array {
     $tab = findAllClasse();
@@ -94,3 +79,13 @@ function filterByNiveau($niveau,$libelle,$classe){
     return $clas;
 }
 //fin du filtrage des classes par niveau
+//fonction de verification d'unicité des classe
+function verificationUniciteOnClasse(mixed $data,string $a):bool{
+    $classes=findAllClasse();
+    foreach($classes as $classe){
+        if($classe[$a] == $data){
+            return false;
+        }
+    }
+    return true;
+}

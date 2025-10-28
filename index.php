@@ -7,6 +7,7 @@ require_once 'controllers/controllerUser.php';
 require_once 'controllers/controllerEtudiant.php';
 require_once 'controllers/controllerClasse.php';
 require_once 'controllers/controllerFiliere.php';
+require_once 'controllers/controllerNiveau.php';
 define("WEBROOT", "http://localhost:8000/");
 $page = $_REQUEST['page'] ?? 'login';
 if (!isset($_SESSION["userConnect"]) && $page !== 'login') {
@@ -30,6 +31,9 @@ switch ($page) {
     break;
     case 'liste_filiere':
         listeFiliere();
+    break;
+    case 'liste_niveau':
+        listeNiveau();
     break;
     case 'logout':
         session_destroy();

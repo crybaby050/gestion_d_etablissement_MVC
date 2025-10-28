@@ -17,24 +17,20 @@
             "libelle": "Architechture des r\u00e9seaux"
         }
     },
-    "niveau": [
-        {
-            "id": 2,
-            "libelle": "Licence 2"
-        },
-        {
+    "niveau": {
+        "1": {
             "id": 3,
             "libelle": "Licence 3"
         },
-        {
+        "2": {
             "id": 4,
             "libelle": "Licence 4"
         },
-        {
+        "3": {
             "id": 5,
             "libelle": "Licence 1"
         }
-    ],
+    },
     "classe": {
         "3": {
             "id": 6,

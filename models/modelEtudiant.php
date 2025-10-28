@@ -1,11 +1,5 @@
 <?php
 //test du model etudiants
-require_once 'models/modelData.php';
-function findAllEtudiant():array{
-    $datas=jsonToArray();
-    return $datas['etudiant'];
-}
-
 //debut recuperation des données pour filtrer les etudiants par classe
 function getClasseByLibelle($classes,$libelle){
     foreach ($classes as $c) {

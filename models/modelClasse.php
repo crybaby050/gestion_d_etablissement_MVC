@@ -1,6 +1,4 @@
 <?php
-//creation du model classe
-require_once 'models/modelData.php';
 //recuperation de donnée des classes
 // function findAllClasse():array{
 //     $datas=jsonToArray();

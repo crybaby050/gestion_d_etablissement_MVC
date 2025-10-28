@@ -27,3 +27,21 @@ function presence($tab):void{
         echo "<h3> Auncun element enregistrer</h3>";
     }
 }
+//fonction qui me permet de creer un nouveau id tout en evitant les doublons
+function nouveauId(array $tableau): int {
+    $id=[];
+    if (empty($tableau)) {
+        return 1;
+    }else{
+        foreach($tableau as $tab){
+            $id[]=$tab['id'];
+        }
+    }
+    return max($id) + 1;
+}
+//fonction pour ajouter un nouvel element dans le fichier json
+function ajouter($newEtude,string $a):void{
+    $datas = jsonToArray();
+    array_push($datas[$a],$newEtude);
+    arrayToJson($datas);
+}

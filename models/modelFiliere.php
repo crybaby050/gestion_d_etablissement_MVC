@@ -24,3 +24,13 @@ function delFiliereWithClasseWithEtudiant($id){
         }
     }
 }
+//verification d'unicité sur le libelle du filiere
+function verificationUniciteOnFiliere(mixed $data,string $a):bool{
+    $filieres=findAllFilliere();
+    foreach($filieres as $filiere){
+        if($filiere[$a] == $data){
+            return false;
+        }
+    }
+    return true;
+}

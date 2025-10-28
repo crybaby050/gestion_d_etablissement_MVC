@@ -18,5 +18,5 @@ function listeClasse()
         $libe = trim($_REQUEST['nive']);
         $classes = filterByNiveau($niveau, $libe, $classes);
     }
-    require_once __DIR__ . '/../views/etudiant/classe.php';
+    require_once __DIR__ . '/../views/classe/classe.php';
 }

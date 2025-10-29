@@ -30,7 +30,7 @@
                     <?php $id=$niv['id']?>
                     <td><?= $niv['libelle'] ?></td>
                     <td>
-                        <a href="<?=WEBROOT?>?page=classeniveau&id=<?=$niv['id']?>">
+                        <a href="<?=WEBROOT?>?page=detail_niveau&id=<?=$niv['id']?>">
                             <button>Voir liste</button>
                         </a>
                         <a href="<?= WEBROOT ?>?page=liste_niveau&id=<?= $id ?>" onclick="return confirm('La supression de cette filiere entrainera la supression des classes et etudiants auquel elle est liée.\nVoulez-vous confirmer ?')">

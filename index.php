@@ -60,6 +60,9 @@ switch ($page) {
     case 'liste_niveau':
         listeNiveau();
     break;
+    case 'detail_niveau':
+        detailNiveau();
+    break;
     case 'logout':
         session_destroy();
         header("Location: " . WEBROOT);

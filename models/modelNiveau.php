@@ -34,3 +34,14 @@ function verificationUniciteOnNiveau(mixed $data,string $a):bool{
     }
     return true;
 }
+//fonction qui nous peremt de trouver les classes rattacher a un niveau
+function classeAndNiveau($id){
+    $classes=findAllClasse();
+    $tab=[];
+    foreach($classes as $classe){
+        if($classe['idNiveau']==$id){
+            $tab[]=$classe;
+        }
+    }
+    return $tab;
+}

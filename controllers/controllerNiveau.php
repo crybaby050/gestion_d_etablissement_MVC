@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../models/modelNiveau.php';
-function listeNiveau(){
+function listeNiveau()
+{
     $errors = [];
     $verif = true;
     if (isset($_REQUEST['id'])) {
@@ -33,4 +34,12 @@ function listeNiveau(){
         }
     }
     require_once __DIR__ . '/../views/niveau/niveau.php';
+}
+function detailNiveau()
+{
+    $id = intval($_REQUEST['id']);
+    $filiere = findAllFilliere();
+    $niveau = findAllNiveau();
+    $classes = classeAndNiveau($id);
+    require_once __DIR__ . '/../views/niveau/detail.php';
 }

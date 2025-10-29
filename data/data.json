@@ -47,7 +47,7 @@
             "idNiveau": "3"
         },
         "5": {
-            "id": 8,
+            "id": "8",
             "libelle": "marketing",
             "code": "md-001",
             "idFiliere": "1",
@@ -70,7 +70,7 @@
             "matricule": "ETU005",
             "nom": "Thiam",
             "prenom": "abdou",
-            "idClasse": 6,
+            "idClasse": 8,
             "email": "benthiam@gmail.com",
             "telephone": "768324376",
             "adresse": "pikine"

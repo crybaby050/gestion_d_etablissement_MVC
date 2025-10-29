@@ -106,3 +106,13 @@ function modifeClasse()
     }
     require_once __DIR__ . '/../views/classe/modif.php';
 }
+function detailClasse()
+{
+    $id = intval($_REQUEST['id']);
+    $etudes = classeWithEtudiant($id);
+    $classe = findAllClasse();
+    $detail = detailClasseById($id);
+    $filiere = findAllFilliere();
+    $niveau = findAllNiveau();
+    require_once __DIR__ . '/../views/classe/detail.php';
+}

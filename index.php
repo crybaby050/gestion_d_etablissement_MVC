@@ -46,6 +46,9 @@ switch ($page) {
     case 'modif_classe':
         modifeClasse();
     break;
+    case 'detail_classe':
+        detailClasse();
+    break;
     //partie sur les filiere
     case 'liste_filiere':
         listeFiliere();

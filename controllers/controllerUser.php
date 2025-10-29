@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../models/modelUser.php';
 function loginPage(){
     if (isset($_SESSION["userConnect"])) {
-        header("Location: index.php?page=liste_etudiant");
+        header("Location: index.php?page=dashboard");
         exit;
     }
     $errorLogin = "";
@@ -24,7 +24,7 @@ function loginPage(){
             $user = findUserConnect($login, $pwd);
             if ($user) {
                 $_SESSION["userConnect"] = $user;
-                header("Location: index.php?page=liste_etudiant");
+                header("Location: index.php?page=dashboard");
                 exit;
             } else {
                 $errorConnect = "Login ou mot de passe incorrect";

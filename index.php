@@ -3,6 +3,7 @@ session_start();
 // session_unset();
 ob_start();
 require_once 'models/modelReutilisable.php';
+require_once 'controllers/controllerDashboard.php';
 require_once 'controllers/controllerUser.php';
 require_once 'controllers/controllerEtudiant.php';
 require_once 'controllers/controllerClasse.php';
@@ -22,6 +23,10 @@ if ($page !== 'login') {
 switch ($page) {
     case 'login':
         loginPage();
+    break;
+    //affichage du dashboard
+    case 'dashboard':
+        afficherDashboard();
     break;
     //partie sur les etudiants
     case 'liste_etudiant':

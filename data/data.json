@@ -52,6 +52,13 @@
             "code": "md-001",
             "idFiliere": "1",
             "idNiveau": "3"
+        },
+        "6": {
+            "id": 9,
+            "libelle": "l2 dev",
+            "code": "l2-dev",
+            "idFiliere": "7",
+            "idNiveau": "5"
         }
     },
     "etudiant": {

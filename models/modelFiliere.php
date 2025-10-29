@@ -34,3 +34,14 @@ function verificationUniciteOnFiliere(mixed $data,string $a):bool{
     }
     return true;
 }
+//fonction qui nous permet de sortitr les classes rattacher a une filiere
+function classeAndFiliere($id){
+    $classes=findAllClasse();
+    $tab=[];
+    foreach($classes as $classe){
+        if($classe['idFiliere']==$id){
+            $tab[]=$classe;
+        }
+    }
+    return $tab;
+}

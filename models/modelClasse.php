@@ -89,3 +89,14 @@ function verificationUniciteOnClasse(mixed $data,string $a):bool{
     }
     return true;
 }
+//fonction de modification des classes
+function modifierClasseById($modif): void {
+    $datas = jsonToArray();
+    foreach ($datas['classe'] as $index => $mod) {
+        if ((int)$mod['id'] === (int)$modif['id']) {
+            $datas['classe'][$index] = $modif;
+            arrayToJson($datas);
+            return; // sortie dès que modif faite
+        }
+    }
+}

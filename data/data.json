@@ -33,18 +33,18 @@
     },
     "classe": {
         "3": {
-            "id": 6,
+            "id": "6",
             "libelle": "l1 design",
             "code": "RES-L3",
-            "idFiliere": "7",
-            "idNiveau": "4"
+            "idFiliere": "5",
+            "idNiveau": "3"
         },
         "4": {
-            "id": 7,
+            "id": "7",
             "libelle": "design",
             "code": "des-003",
-            "idFiliere": "5",
-            "idNiveau": "5"
+            "idFiliere": "7",
+            "idNiveau": "3"
         },
         "5": {
             "id": 8,

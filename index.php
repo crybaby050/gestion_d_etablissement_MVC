@@ -53,6 +53,9 @@ switch ($page) {
     case 'liste_filiere':
         listeFiliere();
     break;
+    case 'detail_filiere':
+        detailFiliere();
+    break;
     //partin sur les niveau
     case 'liste_niveau':
         listeNiveau();

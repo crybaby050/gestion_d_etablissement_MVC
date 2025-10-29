@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../models/modelFiliere.php';
-function listeFiliere(){
+function listeFiliere()
+{
     $errors = [];
     $verif = true;
     if (isset($_REQUEST['id'])) {
@@ -27,4 +28,12 @@ function listeFiliere(){
         }
     }
     require_once __DIR__ . '/../views/filiere/filiere.php';
+}
+function detailFiliere()
+{
+    $id = intval($_REQUEST['id']);
+    $filiere = findAllFilliere();
+    $niveau = findAllNiveau();
+    $classes = classeAndFiliere($id);
+    require_once __DIR__ . '/../views/filiere/detail.php';
 }

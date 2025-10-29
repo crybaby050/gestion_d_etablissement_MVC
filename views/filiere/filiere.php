@@ -26,7 +26,7 @@
                     <td><?= $filier['libelle'] ?></td>
                     <?php $id=$filier['id']?>
                     <td>
-                        <a href="<?= WEBROOT ?>?page=classefiliere&id=<?= $filier['id'] ?>">
+                        <a href="<?= WEBROOT ?>?page=detail_filiere&id=<?= $filier['id'] ?>">
                             <button>Voir liste</button>
                         </a>
                         <a href="<?= WEBROOT ?>?page=liste_filiere&id=<?= $id ?>" onclick="return confirm('La supression de cette filiere entrainera la supression des classes et etudiants auquel elle est liée.\nVoulez-vous confirmer ?')">

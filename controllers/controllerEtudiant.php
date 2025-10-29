@@ -9,6 +9,7 @@ function listeEtudiant()
         $id = intval($_REQUEST['id']);
         delEtudiantById($id);
         header("Location:" . WEBROOT . "index.php?page=liste_etudiant");
+        exit;
     }
     //partie filtrage de l'etudiant
     $etude = findAllEtudiant();

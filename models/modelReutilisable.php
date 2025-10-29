@@ -54,14 +54,3 @@ function getLibelleByIdElement($classe, $id)
         }
     }
 }
-//fonction qui permet de recherhcer les etudiants affilier a une classe
-function classeWithEtudiant($id){
-    $etudes=findAllEtudiant();
-    $tab=[];
-    foreach($etudes as $etude){
-        if($etude['idClasse']==$id){
-            $tab[]=$etude;
-        }
-    }
-    return $tab;
-}

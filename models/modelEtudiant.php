@@ -51,14 +51,6 @@ function delEtudiantById($id)
 }
 
 //fonction pour trouver la classe a partir de l'idClasse present dans l'etudiant
-function getLibelleByIdElement($classe, $id)
-{
-    foreach ($classe as $c) {
-        if ($c["id"] == $id) {
-            return $c["libelle"];
-        }
-    }
-}
 //fonction qui verifie l'unicité d'un element
 function verificationUnicite(mixed $data, string $a): bool
 {

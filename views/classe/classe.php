@@ -60,7 +60,7 @@
                                 <?php $id = $classe['id']?>
                                 <td class="confclasse">
                                     <a href="<?=WEBROOT?>?page=modif_classe&id=<?=$id?>"><i class="fa-solid fa-pencil"></i></a>
-                                    <a href="<?=WEBROOT?>?page=infoClasse&id=<?=$id?>"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="<?=WEBROOT?>?page=detail_classe&id=<?=$id?>"><i class="fa-solid fa-eye"></i></a>
                                     <a href="<?=WEBROOT?>?page=liste_classe&id=<?=$id?>" onclick="return confirm('La supression de cette classe entrainera la supression des etudiants auquel elle est liée.\nVoulez-vous confirmer ?')">
                                         <i class="fa-solid fa-trash"></i>
                                     </a>

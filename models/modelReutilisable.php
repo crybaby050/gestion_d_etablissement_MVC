@@ -45,3 +45,12 @@ function ajouter($newEtude,string $a):void{
     array_push($datas[$a],$newEtude);
     arrayToJson($datas);
 }
+//fonction pour sortir le libelle de la classe par l'idclasse (on a une repetition de cette focntion au niveau de liste etudiant et de detailclasse)
+function getLibelleByIdElement($classe, $id)
+{
+    foreach ($classe as $c) {
+        if ($c["id"] == $id) {
+            return $c["libelle"];
+        }
+    }
+}
